@@ -7,7 +7,8 @@
     "setup": "node scripts/setup.js",
     "dev": "python -m http.server 3000 --directory src",
     "test": "echo \"테스트 실행 예정\" && exit 0",
-    "lint": "echo \"린트 검사 예정\" && exit 0"
+    "lint": "echo \"린트 검사 예정\" && exit 0",
+    "mcp-server": "node src/mcp-server.js"
   },
   "keywords": [
     "q-developer",
@@ -16,7 +17,8 @@
     "notion-mcp"
   ],
   "dependencies": {
-    "@notionhq/notion-mcp-server": "latest"
+    "@notionhq/client": "^2.2.3",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {},
   "author": "Q Developer Hackathon Team",
