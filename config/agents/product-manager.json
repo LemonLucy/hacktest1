@@ -1,0 +1,28 @@
+{
+  "name": "product-manager-agent",
+  "description": "기획자 역할 - 요구사항 분석 및 기능 명세 작성",
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer {NOTION_API_TOKEN}\",\"Notion-Version\":\"2022-06-28\"}"
+      },
+      "timeout": 6000
+    }
+  },
+  "tools": ["@notion"],
+  "allowedTools": [
+    "@notion/API-post-database-query",
+    "@notion/API-post-search",
+    "@notion/API-retrieve-a-page",
+    "@notion/API-retrieve-a-database"
+  ],
+  "role": "기획자",
+  "responsibilities": [
+    "요구사항 분석",
+    "기능 명세서 작성", 
+    "프로젝트 일정 관리",
+    "Notion 페이지 구조 설계"
+  ]
+}

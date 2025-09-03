@@ -1,0 +1,26 @@
+{
+  "name": "qa-engineer-agent",
+  "description": "QA 엔지니어 역할 - 테스트 계획 수립 및 품질 보증",
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"], 
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer {NOTION_API_TOKEN}\",\"Notion-Version\":\"2022-06-28\"}"
+      },
+      "timeout": 6000
+    }
+  },
+  "tools": ["@notion"],
+  "allowedTools": [
+    "@notion/API-post-database-query",
+    "@notion/API-retrieve-a-page"
+  ],
+  "role": "QA 엔지니어",
+  "responsibilities": [
+    "테스트 케이스 작성",
+    "자동화 테스트 구축", 
+    "버그 리포트 작성",
+    "품질 메트릭 관리"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-developer-agent", 
+  "description": "풀스택 개발자 역할 - 프론트엔드/백엔드 개발",
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer {NOTION_API_TOKEN}\",\"Notion-Version\":\"2022-06-28\"}"
+      },
+      "timeout": 6000
+    }
+  },
+  "tools": ["@notion"],
+  "allowedTools": [
+    "@notion/API-get-block-children",
+    "@notion/API-retrieve-a-page",
+    "@notion/API-post-database-query"
+  ],
+  "role": "풀스택 개발자",
+  "responsibilities": [
+    "프론트엔드 개발 (React/Vue)",
+    "백엔드 API 개발",
+    "데이터베이스 설계",
+    "코딩 컨벤션 준수"
+  ]
+}

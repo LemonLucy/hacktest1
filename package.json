@@ -1,0 +1,24 @@
+{
+  "name": "q-developer-hackathon",
+  "version": "1.0.0",
+  "description": "Q Developer 해커톤 - 멀티에이전트 협업 프로젝트",
+  "main": "src/app.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "python -m http.server 3000 --directory src",
+    "test": "echo \"테스트 실행 예정\" && exit 0",
+    "lint": "echo \"린트 검사 예정\" && exit 0"
+  },
+  "keywords": [
+    "q-developer",
+    "hackathon", 
+    "multi-agent",
+    "notion-mcp"
+  ],
+  "dependencies": {
+    "@notionhq/notion-mcp-server": "latest"
+  },
+  "devDependencies": {},
+  "author": "Q Developer Hackathon Team",
+  "license": "MIT"
+}
